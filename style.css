@@ -1,30 +1,37 @@
-body{
+.custom-container{
     background-color: rgb(25, 143, 131);
     color: whitesmoke;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: fixed; 
+    top: 0;          
+    left: 0;         
+    width: 100%;     
+    height: 100%;    
 }
 
 #cabecalho{
     margin-left: 10%;
     margin-top: none;
 }
-#header-content {
+#conteudo-cabecalho {
     display: flex;
 }
 
-#header-content h1 {
-    margin-right: 12px; /* Espaço entre o h1 e a imagem */
+#conteudo-cabecalho h1 {
+    margin-right: 20px; /* Espaço entre o h1 e a imagem */
+    margin-top: 20px;
 }
 
-#header-content img {
+#conteudo-cabecalho img {
     max-width: 60px; /* Ajuste o tamanho da imagem conforme necessário */
-    height: auto;
+    height: 40px;
+    margin-top: 26px;
 }
 
 #modal-cadastro{
     background-color: bisque;
 }
-input{
+.inputs{
     height: 35px;
     border-radius: 8px;
     border: 2px solid #8e8e8e82;
@@ -32,8 +39,9 @@ input{
     width: 65%;
     margin-left: 15%;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
-.login{
+.custom-login{
     display: flex;
     flex-direction: column;
     background-color: rgb(246, 164, 62);
@@ -43,13 +51,14 @@ input{
     height: 25rem;
     margin-left: 30%;
 }
+
 h2{
     text-align: center;
     margin-top: 5px;
     padding-top: 25px;
     font-size: 30pt;
 }
-.login button {
+.custom-login button {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -64,18 +73,12 @@ h2{
     margin-bottom: 20px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
 }
-.login button:hover {
+.custom-login button:hover {
     background-color: #45a049;
 }
-a#atualizar-senha{
+
+a {
     margin-left: auto;
     margin-right: 20px;
-}
-a#atualizar-senha{
-    margin-left: auto;
-    margin-right: 20px;
-}
-a#botao-cadastrar{
-    margin-left: auto;
-    margin-right: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
