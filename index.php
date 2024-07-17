@@ -28,10 +28,34 @@ include_once('conexao.php');
       <input type="email" class="inputs" placeholder="Insira seu email..." required><br>
       <input type="password" class="inputs" placeholder="Insira sua senha..." required><br>
       <button type="submit" value="entrar" id="entrar">Entrar</button>
-      <a href="#" id="atualizar-senha">Esqueceu a senha?</a><br>
+      <a href="#" id="atualizar-senha" onclick="atualizarSenha()">Esqueceu a senha?</a><br>
       <a href="#" id="link-cadastrar" onclick="criarCadastro()">Ainda não possui cadastro?</a>
     </div>
   </div>
+
+  <div class="modal fade" id="senhaModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="cadastroModalLabel">Esqueceu sua senha?</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form method="POST" action="cadastrar.php">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type=" email" class="form-control mb-2" id="email" placeholder="Insira seu email..." name="email" required>
+            </div>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="custom-senha-button" onclick="atualizarSenha()">Redefinir senha</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- MODAL DE CADASTRO -->
   <div class="modal fade" id="cadastroModal" tabindex="-1" aria-labelledby="cadastroModalLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -58,8 +82,8 @@ include_once('conexao.php');
             </div>
         </div>
         <div class="form-group">
-          <button type="button" class="custom-cancel-button" data-dismiss="modal">Cancelar</button>
           <button type="submit" class="custom-save-button" onclick="salvarCadastro()">Salvar</button>
+          <button type="button" class="custom-cancel-button" data-dismiss="modal">Cancelar</button>
         </div>
       </div>
     </div>
@@ -71,6 +95,10 @@ include_once('conexao.php');
   <script>
     function criarCadastro() {
       $('#cadastroModal').modal('show');
+    }
+
+    function atualizarSenha() {
+      $('#senhaModal').modal('show');
     }
 
     function salvarCadastro() {
