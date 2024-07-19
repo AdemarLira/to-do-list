@@ -23,7 +23,7 @@ img{
     flex-direction: column;
     background-color: rgb(222, 156, 75);
     width: 12%;
-    height: 50rem;
+    height: 35rem;
     margin-top: 0px;
     margin-left: 0px;
     border-radius: 18px;
@@ -34,7 +34,7 @@ img{
     background-color: rgba(223, 223, 223, 0.649);
     border-radius: 18px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.6);
-    height: 50rem;
+    height:35rem;
     width: 72rem;
     margin-top: 80px;
     margin-left: 50px;
@@ -50,5 +50,20 @@ img{
 }
 .custom-dropdawn{
     background-color: rgb(148, 148, 148);
-
 }
+
+.custom-dropdown-btn {
+    margin-top: 20px;
+    background-color: rgb(222, 156, 75) !important;
+    border-color: rgb(222, 156, 75) !important;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+
+  .custom-dropdown-btn:hover,
+  .custom-dropdown-btn:focus,
+  .custom-dropdown-btn:active {
+    background-color: rgb(200, 140, 70) !important;
+    /* Ajuste a cor conforme necessário */
+    border-color: rgb(200, 140, 70) !important;
+    /* Ajuste a cor conforme necessário */
+  }
