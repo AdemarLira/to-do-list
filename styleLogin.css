@@ -51,13 +51,16 @@
     height: 25rem;
     margin-left: 30%;
 }
-
+h1{
+    color: rgb(125, 124, 124);
+}
 h2{
     text-align: center;
     margin-top: 5px;
     padding-top: 25px;
     font-size: 30pt;
 }
+
 .custom-login button {
     padding: 10px 20px;
     border: none;

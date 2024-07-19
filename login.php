@@ -19,7 +19,7 @@ include_once('conexao.php');
     <div id="cabecalho">
       <div id="conteudo-cabecalho">
         <h1>Tasks List</h1>
-        <img src="/task-list/logo.png" alt="Logo">
+        <img src="./img/logo.png" alt="Logo">
       </div>
     </div>
     <!-- INSERÇÃO DAS INFORMAÇÕES DE LOGIN -->
