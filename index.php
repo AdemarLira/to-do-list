@@ -44,9 +44,7 @@
         </div>
       </div>
   </nav>
-
   <h3> Task list</h3>
-
   <div class="navegacao-principal">
     <!-- Botoes de Ações -->
     <div class="navegacao-lateral">
