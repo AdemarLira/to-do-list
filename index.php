@@ -49,29 +49,11 @@
     <!-- Botoes de Ações -->
     <div class="navegacao-lateral">
       <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
-        <button type="button" class="btn btn-primary custom-dropdown-btn" onclick="mostrarModelos()">Criar Lista <i class="fa-solid fa-circle-plus"></i></button><br>
+        <button type="button" class="btn btn-primary custom-dropdown-btn" onclick="mostrarModelos()"><i class="fa-solid fa-circle-plus"></i> Criar Lista</button><br>
         <button type="button" class="btn btn-primary custom-dropdown-btn">Minhas Listas</button>
         <div class="btn-group dropend" role="group">
-          <button type="button" class="btn btn-primary custom-dropdown-btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Dropdown link</a></li>
-            <li><a class="dropdown-item" href="#">Dropdown link</a></li>
-          </ul>
-        </div>
-        <div class="btn-group dropend" role="group">
-          <button type="button" class="btn btn-primary custom-dropdown-btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Dropdown link</a></li>
-            <li><a class="dropdown-item" href="#">Dropdown link</a></li>
-          </ul>
-        </div>
-        <div class="btn-group dropend" role="group">
-          <button type="button" class="btn btn-primary custom-dropdown-btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
+          <button type="button" class="btn btn-primary custom-dropdown-btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-magnifying-glass"></i>
+            Buscar
           </button>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">Dropdown link</a></li>
@@ -83,11 +65,18 @@
             Etiquetas
           </button>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Dropdown link</a></li>
-            <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+            <li><a class="dropdown-item" href="#">Trabalho</a></li>
+            <li><a class="dropdown-item" href="#">Lazer</a></li>
+            <li><a class="dropdown-item" href="#">Pessoal</a></li>
+            <li><a class="dropdown-item" href="#">Metas</a></li>
           </ul>
         </div>
+        <br>
+        <button type="button" class="btn btn-primary custom-dropdown-btn"><i class="fa-solid fa-list"></i> Minhas Listas</button>
       </div>
+    </div>
+    <div class="inicio-painel">
+
     </div>
     <div class="content-principal">
       <div id="carouselExample" class="carousel slide">
