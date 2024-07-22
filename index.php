@@ -7,6 +7,7 @@
   <title>Lista de tarefas</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
 </head>
 
@@ -27,7 +28,7 @@
             <a class="nav-link" href="#">Modelos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Calendário</a>
+            <button class="nav-link btn btn-link" onclick="abrirCalendario()">Calendário</button>
           </li>
         </ul>
         <!-- Botão DROPDAWN -->
@@ -44,13 +45,14 @@
         </div>
       </div>
   </nav>
+
   <h3> Task list</h3>
   <div class="navegacao-principal">
     <!-- Botoes de Ações -->
     <div class="navegacao-lateral">
       <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
         <button type="button" class="btn btn-primary custom-dropdown-btn" onclick="mostrarModelos()"><i class="fa-solid fa-circle-plus"></i> Criar Lista</button><br>
-        <button type="button" class="btn btn-primary custom-dropdown-btn">Minhas Listas</button>
+        <button type="button" class="btn btn-primary custom-dropdown-btn"><i class="fa-solid fa-list"></i> Minhas Listas</button>
         <div class="btn-group dropend" role="group">
           <button type="button" class="btn btn-primary custom-dropdown-btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-magnifying-glass"></i>
             Buscar
@@ -62,7 +64,7 @@
         </div>
         <div class="btn-group dropend" role="group">
           <button type="button" class="btn btn-primary custom-dropdown-btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            Etiquetas
+            <i class="fa-solid fa-tags"></i> Etiquetas
           </button>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">Trabalho</a></li>
@@ -72,7 +74,6 @@
           </ul>
         </div>
         <br>
-        <button type="button" class="btn btn-primary custom-dropdown-btn"><i class="fa-solid fa-list"></i> Minhas Listas</button>
       </div>
     </div>
     <div class="inicio-painel">
@@ -105,8 +106,45 @@
       </div>
     </div>
   </div>
+
+  <!-- Modal do Calendário -->
+  <div class="modal fade" id="calendarModal" tabindex="-1" aria-labelledby="calendarModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="calendarModalLabel">Calendário</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div id="datepicker"></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+
+  <script>
+    function abrirCalendario() {
+      $('#calendarModal').modal('show');
+    }
+
+    $(document).ready(function() {
+      $('#calendarModal').on('shown.bs.modal', function() {
+        $('#datepicker').datepicker({
+          format: 'dd/mm/yyyy',
+          todayHighlight: true,
+          autoclose: true
+        });
+      });
+    });
+  </script>
 </body>
 
 </html>
