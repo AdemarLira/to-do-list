@@ -8,9 +8,13 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" rel="stylesheet">
-  <link href="style.css" rel="stylesheet">
+  <link href="style1.css" rel="stylesheet">
 </head>
-
+  <!-- <script>
+    function mostrarModelos() {
+      document.querySelector('.content-principal').style.display = 'block';
+    }
+  </script> -->
 <body>
   <nav class="navbar navbar-expand-lg custom-navbar-bg">
     <div class="container-fluid">
@@ -25,7 +29,7 @@
             <a class="nav-link" aria-current="page" href="#">Início</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Modelos</a>
+            <a class="nav-link" onclick = "mostrarModelos()" href="#">Modelos</a>
           </li>
           <li class="nav-item">
             <button class="nav-link btn btn-link" onclick="abrirCalendario()">Calendário</button>
@@ -46,12 +50,13 @@
       </div>
   </nav>
 
+<div class="container mt-3">
   <h3> Task list</h3>
   <div class="navegacao-principal">
     <!-- Botoes de Ações -->
     <div class="navegacao-lateral">
       <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
-        <button type="button" class="btn btn-primary custom-dropdown-btn" onclick="mostrarModelos()"><i class="fa-solid fa-circle-plus"></i> Criar Lista</button><br>
+        <button type="button" class="btn btn-primary custom-dropdown-btn" onclick="()"><i class="fa-solid fa-circle-plus"></i> Criar Lista</button><br>
         <button type="button" class="btn btn-primary custom-dropdown-btn"><i class="fa-solid fa-list"></i> Minhas Listas</button>
         <div class="btn-group dropend" role="group">
           <button type="button" class="btn btn-primary custom-dropdown-btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-magnifying-glass"></i>
@@ -76,36 +81,36 @@
         <br>
       </div>
     </div>
-    <div class="inicio-painel">
 
-    </div>
-    <div class="content-principal">
-      <div id="carouselExample" class="carousel slide">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./img/listaCompras.png" class="d-block" alt="...">
+    <!-- conteudo da funçcao mostrarModelos -->
+      <div class="content-principal">
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./img/listaCompras.png" class="d-block" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/diario.png" class="d-block" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/calendario.png" class="d-block" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/receitas.png" class="d-block" alt="...">
+            </div>
           </div>
-          <div class="carousel-item">
-            <img src="./img/diario.png" class="d-block" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="./img/calendario.png" class="d-block" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="./img/receitas.png" class="d-block" alt="...">
-          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
-    </div>
   </div>
+</div>
 
   <!-- Modal do Calendário -->
   <div class="modal fade" id="calendarModal" tabindex="-1" aria-labelledby="calendarModalLabel" aria-hidden="true">
@@ -131,6 +136,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
 
   <script>
+    function mostrarModelos() {
+      document.querySelector('.content-principal').style.display = 'block';
+    }
     function abrirCalendario() {
       $('#calendarModal').modal('show');
     }
