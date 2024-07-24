@@ -10,11 +10,6 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" rel="stylesheet">
   <link href="style1.css" rel="stylesheet">
 </head>
-  <!-- <script>
-    function mostrarModelos() {
-      document.querySelector('.content-principal').style.display = 'block';
-    }
-  </script> -->
 <body>
   <nav class="navbar navbar-expand-lg custom-navbar-bg">
     <div class="container-fluid">
@@ -26,7 +21,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Início</a>
+            <a class="nav-link" aria-current="page" onclick="homePage()" href="#">Início</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" onclick = "mostrarModelos()" href="#">Modelos</a>
@@ -63,8 +58,8 @@
             Buscar
           </button>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Dropdown link</a></li>
-            <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+            <li><a class="dropdown-item" href="#">Em breve </a></li>
+            <li><a class="dropdown-item" href="#">Concluídas</a></li>
           </ul>
         </div>
         <div class="btn-group dropend" role="group">
@@ -136,6 +131,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
 
   <script>
+    function homePage() {
+      document.querySelector('.content-principal').style.display = 'none';
+    }
     function mostrarModelos() {
       document.querySelector('.content-principal').style.display = 'block';
     }
