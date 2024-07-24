@@ -60,6 +60,7 @@
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">Em breve </a></li>
             <li><a class="dropdown-item" href="#">Concluídas</a></li>
+            <li><a class="dropdown-item" href="#">Adicionar seção</a></li>
           </ul>
         </div>
         <div class="btn-group dropend" role="group">
@@ -74,8 +75,9 @@
           </ul>
         </div>
         <br>
-      </div>
+      <button type="button" class="btn btn-primary custom-dropdown-btn"><i class="fa-solid fa-people-group"></i> Times</button>
     </div>
+  </div>
 
     <!-- conteudo da funçcao mostrarModelos -->
       <div class="content-principal">
