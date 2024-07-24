@@ -1,3 +1,7 @@
+<?php
+include_once("conexao.php")
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -186,6 +190,7 @@
         });
       });
     });
+
 
     let count = 1;
 
