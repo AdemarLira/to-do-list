@@ -1,5 +1,5 @@
 <?php
-include_once("conexao.php")
+include_once("conexao.php");
 ?>
 
 <!DOCTYPE html>
@@ -167,56 +167,7 @@ include_once("conexao.php")
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
-
-  <script>
-    function homePage() {
-      document.querySelector('.conteiner-central').style.display = 'none';
-    }
-
-    function mostrarModelos() {
-      document.querySelector('.conteiner-central').style.display = 'block';
-    }
-
-    function abrirCalendario() {
-      $('#calendarModal').modal('show');
-    }
-
-    $(document).ready(function() {
-      $('#calendarModal').on('shown.bs.modal', function() {
-        $('#datepicker').datepicker({
-          format: 'dd/mm/yyyy',
-          todayHighlight: true,
-          autoclose: true
-        });
-      });
-    });
-
-
-    let count = 1;
-
-    function adicionarTime() {
-      var timeModal = new bootstrap.Modal(document.getElementById('timeModal'));
-      timeModal.show();
-    }
-
-    function salvarTime() {
-      const nomeTime = document.getElementById('nomeTime').value.trim();
-
-      if (nomeTime !== '') {
-        const novoItem = document.createElement('li');
-        novoItem.innerHTML = `<a class="dropdown-item" href="#"><i class="fa-solid fa-people-group"></i> ${nomeTime}</a>`;
-        document.getElementById('timesDropdown').appendChild(novoItem);
-        count++;
-
-        document.getElementById('nomeTime').value = '';
-
-        var timeModal = bootstrap.Modal.getInstance(document.getElementById('timeModal'));
-        timeModal.hide();
-      } else {
-        alert('Por favor, insira um nome para o time.');
-      }
-    }
-  </script>
+  <script src="functions.js"></script>
 </body>
 
 </html>
