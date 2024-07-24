@@ -79,7 +79,7 @@ body{
      background-color: rgb(222, 156, 75) !important;
      border-color: rgb(222, 156, 75) !important;
      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-   }
+}
  
  .custom-dropdown-btn:hover,
  .custom-dropdown-btn:focus,
@@ -105,5 +105,5 @@ body{
  }
  
  .carousel-control-next {
-     right: 36rem;
+     right: 35rem;
  }
