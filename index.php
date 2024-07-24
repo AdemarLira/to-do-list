@@ -77,9 +77,33 @@
           <button type="button" class="btn btn-primary custom-dropdown-btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
             <i class="fa-solid fa-people-group"></i> Times
           </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#" onclick="adicionarTime()"><i class="fa-solid fa-circle-plus"></i> Adicionar time</a></li>
+          <ul class="dropdown-menu" id="timesDropdown">
+            <li><a class="dropdown-item " href="#" onclick="adicionarTime()"><i class="fa-solid fa-circle-plus"></i> Adicionar time</a></li>
           </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal TIME -->
+    <div class="modal fade" id="timeModal" tabindex="-1" aria-labelledby="timeModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="timeModalLabel">Adicionar Time</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form id="timeForm">
+              <div class="mb-3">
+                <label for="nomeTime" class="form-label">Nome do Time</label>
+                <input type="text" class="form-control" id="nomeTime" required>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-primary" onclick="salvarTime()">Salvar</button>
+          </div>
         </div>
       </div>
     </div>
@@ -162,6 +186,31 @@
         });
       });
     });
+
+    let count = 1;
+
+    function adicionarTime() {
+      var timeModal = new bootstrap.Modal(document.getElementById('timeModal'));
+      timeModal.show();
+    }
+
+    function salvarTime() {
+      const nomeTime = document.getElementById('nomeTime').value.trim();
+
+      if (nomeTime !== '') {
+        const novoItem = document.createElement('li');
+        novoItem.innerHTML = `<a class="dropdown-item" href="#"><i class="fa-solid fa-people-group"></i> ${nomeTime}</a>`;
+        document.getElementById('timesDropdown').appendChild(novoItem);
+        count++;
+
+        document.getElementById('nomeTime').value = '';
+
+        var timeModal = bootstrap.Modal.getInstance(document.getElementById('timeModal'));
+        timeModal.hide();
+      } else {
+        alert('Por favor, insira um nome para o time.');
+      }
+    }
   </script>
 </body>
 
