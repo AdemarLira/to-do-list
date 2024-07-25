@@ -90,18 +90,18 @@ body{
  .d-block{
  width: 30%;
  height: 25rem;
- /* margin-left: 3rem;
- margin-top: 2rem; */
+ margin-left: 3rem;
+ margin-top: 2rem;
  }
 
  .imgLista{
     width: 60%;
-    height: 25rem;
+    height: 28rem;
     margin-left: 3rem;
     margin-top: 2rem;
  }
  .image-container {
-    margin-top: 4rem;
+    margin-top: 2rem;
     margin-left: 1rem;
     display: flex;
     justify-content: center;
