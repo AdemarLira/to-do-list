@@ -90,9 +90,27 @@ body{
  .d-block{
  width: 30%;
  height: 25rem;
- margin-left: 3rem;
- margin-top: 2rem;
+ /* margin-left: 3rem;
+ margin-top: 2rem; */
  }
+
+ .imgLista{
+    width: 60%;
+    height: 25rem;
+    margin-left: 3rem;
+    margin-top: 2rem;
+ }
+ .image-container {
+    margin-top: 4rem;
+    margin-left: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-container img {
+    margin: 0 10px; /* Espaço entre as imagens */
+  }
  
  .carousel-control-prev,
  .carousel-control-next {

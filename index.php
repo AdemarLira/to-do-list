@@ -54,7 +54,7 @@ include_once("conexao.php");
     <div class="navegacao-lateral">
       <!-- Botoes de Ações -->
       <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
-        <button type="button" class="btn btn-primary custom-dropdown-btn"><i class="fa-solid fa-circle-plus"></i> Criar Lista</button><br>
+        <button type="button" class="btn btn-primary custom-dropdown-btn" onclick="criarLista()"><i class="fa-solid fa-circle-plus"></i> Criar Lista</button><br>
         <button type="button" class="btn btn-primary custom-dropdown-btn"><i class="fa-solid fa-list"></i> Minhas Listas</button>
         <div class="btn-group dropend" role="group">
           <button type="button" class="btn btn-primary custom-dropdown-btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-magnifying-glass"></i>
@@ -119,7 +119,10 @@ include_once("conexao.php");
           <div id="carouselExample" class="carousel slide">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="./img/listaCompras.png" class="d-block" alt="...">
+                <div class="image-container">
+                  <img src="./img/listaCompras.png" class="d-block" alt="...">
+                  <img src="./img/checkList.png" class="imgLista">
+                </div>
               </div>
               <div class="carousel-item">
                 <img src="./img/diario.png" class="d-block" alt="...">
@@ -143,31 +146,30 @@ include_once("conexao.php");
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- Modal do Calendário -->
-  <div class="modal fade" id="calendarModal" tabindex="-1" aria-labelledby="calendarModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="calendarModalLabel">Calendário</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <div id="datepicker"></div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+    <!-- Modal do Calendário -->
+    <div class="modal fade" id="calendarModal" tabindex="-1" aria-labelledby="calendarModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="calendarModalLabel">Calendário</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div id="datepicker"></div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
-  <script src="functions.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <script src="functions.js"></script>
 </body>
 
 </html>

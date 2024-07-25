@@ -3,6 +3,6 @@
 $servidor = "localhost";
 $usuario = "root";
 $senha = "";
-$dbName = "test";
+$dbName = "task";
 
 $conn = mysqli_connect($servidor, $usuario, $senha, $dbName);
