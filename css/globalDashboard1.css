@@ -17,6 +17,16 @@
    flex: 0 0 25%;
    max-width: 14%;
 }
+.btn.custom-dropdown-btn:focus, 
+.btn.custom-dropdown-btn:active {
+  background-color: rgba(102, 72, 38, 0.244);
+}
+
+.btn-group-vertical .btn:focus, 
+.btn-group-vertical .btn:active {
+  background-color:rgba(102, 72, 38, 0.244);
+}
+
 .navegacao-principal{
     display:flex;
     background-color: rgba(223, 223, 223, 0.712);
@@ -63,16 +73,19 @@ h3{
     background-color: rgba(222, 156, 75, 0.743);
 }
 .custom-dropdawn{
-    background-color: rgb(191, 190, 190);
     background: transparent;
+    border: none;
 }
-
+.custom-dropdawn:hover{
+    background:rgb(102, 72, 38) !important; 
+}
 .custom-dropdown-btn {
     margin-top: 30px;
     background-color: transparent;
     border-color:transparent;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     letter-spacing: 0.5px; 
+    border: none;
 }
 
 .custom-dropdown-btn:hover,

@@ -14,7 +14,7 @@ include_once("conexao.php");
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link href="css/globalDashboard.css" rel="stylesheet">
+  <link href="css/globalDashboard1.css" rel="stylesheet">
 </head>
 
 <body>

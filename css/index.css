@@ -20,4 +20,21 @@
     background: linear-gradient(109deg, rgba(10, 12, 16, 0.6) 15%, rgba(10, 12, 16, 0.4) 20%, rgba(10, 12, 15, 0.99) 85%);
  }
  
- 
+ .navigation_social {
+   margin-left: 66rem;
+   margin-top: 10px;
+   display: flex;
+   column-gap: 20px;
+}
+.navigation_social svg{
+   width: 20px;
+   height: 20px;
+   opacity: 0.6;
+   transition: all 0.5s;
+
+}
+.navigation_social svg:hover{
+   opacity: 1;
+   transform: translateY(-5px);
+   cursor: pointer;
+} 
