@@ -20,7 +20,7 @@ include_once("conexao.php");
 <body>
   <div id="background">
     <video loop autoplay muted>
-      <source src="backgroundVideo.mp4" type="video/mp4">
+      <source src="./mp4/backgroundVideo.mp4" type="video/mp4">
     </video>
   </div>
 
