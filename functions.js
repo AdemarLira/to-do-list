@@ -1,7 +1,3 @@
-function homePage() {
-    document.querySelector('.conteiner-central').style.display = 'none';
-}
-
 function mostrarModelos() {
     document.querySelector('.conteiner-central').style.display = 'block';
 }

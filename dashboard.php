@@ -3,7 +3,7 @@ include_once("conexao.php");
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
@@ -13,7 +13,8 @@ include_once("conexao.php");
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" rel="stylesheet">
-  <link href="css/global.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="css/globalDashboard.css" rel="stylesheet">
 </head>
 
 <body>
@@ -56,7 +57,9 @@ include_once("conexao.php");
       </div>
   </nav>
 
-  <h3> Task list</h3>
+  <div data-aos="fade-up" data-aos-anchor-placement="center-center">
+    <h3> Task list</h3>
+  </div>
   <div class="container custom-container">
     <div class="navegacao-lateral">
       <!-- Botoes de Ações -->
@@ -177,10 +180,15 @@ include_once("conexao.php");
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="functions.js"></script>
     <script>
       AOS.init();
     </script>
-    <script src="functions.js"></script>
+    <script>
+      function homePage() {
+        window.location.href = 'index.html';
+      }
+    </script>
 </body>
 
 </html>
