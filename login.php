@@ -9,7 +9,7 @@ include_once("conexao.php");
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/styleLogin.css">
+  <link rel="stylesheet" href="css/telaLogin.css">
   <title>TASK List</title>
 </head>
 
@@ -24,6 +24,11 @@ include_once("conexao.php");
     </div>
     <!-- INSERÇÃO DAS INFORMAÇÕES DE LOGIN -->
     <div class="custom-login">
+      <div id="background">
+        <video loop autoplay muted>
+          <source src="backgroundVideo.mp4" type="video/mp4">
+        </video>
+      </div>
       <h2>Login</h2><br>
       <input type="email" class="inputs" placeholder="Insira seu email..." required><br>
       <input type="password" class="inputs" placeholder="Insira sua senha..." required><br>
@@ -31,6 +36,7 @@ include_once("conexao.php");
       <a href="#" id="atualizar-senha" onclick="atualizarSenha()">Esqueceu a senha?</a><br>
       <a href="#" id="link-cadastrar" onclick="criarCadastro()">Ainda não possui cadastro?</a>
     </div>
+  </div>
   </div>
 
   <div class="modal fade" id="senhaModal">

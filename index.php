@@ -13,7 +13,7 @@ include_once("conexao.php");
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" rel="stylesheet">
-  <link href="css/dashboard.css" rel="stylesheet">
+  <link href="css/global.css" rel="stylesheet">
 </head>
 
 <body>
@@ -22,6 +22,7 @@ include_once("conexao.php");
       <source src="backgroundVideo.mp4" type="video/mp4">
     </video>
   </div>
+
   <nav class=" navbar navbar-expand-lg custom-navbar-bg">
     <div class="container-fluid">
       <!-- PAINEL DE NAVEGACAO SUPERIOR -->
@@ -30,15 +31,15 @@ include_once("conexao.php");
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 navigation">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" onclick="homePage()" href="#">Início</a>
+            <a class="nav-link navigation_link" aria-current="page" onclick="homePage()" href="#">Início</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" onclick="mostrarModelos()" href="#">Modelos</a>
+            <a class="nav-link navigation_link" onclick="mostrarModelos()" href="#">Modelos</a>
           </li>
           <li class="nav-item">
-            <button class="nav-link btn btn-link" onclick="abrirCalendario()">Calendário</button>
+            <button class="nav-link btn btn-link navigation_link" onclick="abrirCalendario()">Calendário</button>
           </li>
         </ul>
         <!-- Botão DROPDAWN -->
