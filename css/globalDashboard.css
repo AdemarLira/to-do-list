@@ -7,7 +7,7 @@
 .navegacao-lateral{
    display: flex;
    flex-direction: column;
-   background-color: rgb(222, 156, 75);
+   background-color: rgba(222, 156, 75, 0.743);
    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.6);
    width: 12%;
    height: 32rem;
@@ -34,17 +34,9 @@
    width: 200rem;
 }
 .custom-navbar-bg{
-    background-color: rgb(246, 164, 62);
+    background-color: rgba(246, 163, 62, 0.743);
     color: whitesmoke;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
-.nav-link{
-    color: whitesmoke;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    letter-spacing: 1px; 
-}
-img{
-    width: 4%;
 }
 .navbar-brand{
     font-size: 22px;
@@ -68,7 +60,7 @@ h3{
 }
 
 .custom-button-sidebar{
-    background-color: rgb(222, 156, 75);
+    background-color: rgba(222, 156, 75, 0.743);
 }
 .custom-dropdawn{
     background-color: rgb(191, 190, 190);
@@ -77,8 +69,8 @@ h3{
 
 .custom-dropdown-btn {
     margin-top: 30px;
-    background-color: rgb(222, 156, 75) !important;
-    border-color: rgb(222, 156, 75) !important;
+    background-color: transparent;
+    border-color:transparent;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     letter-spacing: 0.5px; 
 }
@@ -86,8 +78,10 @@ h3{
 .custom-dropdown-btn:hover,
 .custom-dropdown-btn:focus,
 .custom-dropdown-btn:active {
-background-color: rgb(200, 140, 70) !important;
-border-color: rgb(200, 140, 70) !important;
+background-color: transparent;
+border-color: transparent;
+color:rgb(102, 72, 38) !important; 
+
 }
 .d-block{
 width: 30%;
@@ -149,37 +143,3 @@ margin-top: 2rem;
    background: linear-gradient(109deg, rgba(10, 12, 16, 0.6) 15%, rgba(10, 12, 16, 0.4) 20%, rgba(10, 12, 15, 0.99) 85%);
 }
 
-.navigation {
-    display: flex;
-    align-items: center;
-    column-gap: 4px;
-    list-style: none;
-}
-.navigation_link {
-    font-size: 14px;
-    font-weight: 300;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    position: relative;
-}
-.navigation_link:hover {
- color:rgb(102, 72, 38) !important; 
-}
-.navigation_link::after{
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -2px;
-    width: 60%;
-    height: 1px; 
-    background:rgb(102, 72, 38) !important; 
-    transform: scale(0);
-    transform-origin: right;
-    transition: transform 0.4s;
-}
-
-.navigation_link:hover::after{
-    transform: scale(1);
-    transform-origin: left;
-    transition: transform 0.4s;
-}
