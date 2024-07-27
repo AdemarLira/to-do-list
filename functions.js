@@ -45,3 +45,8 @@ function salvarTime() {
 function criarLista(){
   
 }
+
+function irDashboard(){
+  window.location.href = 'dashboard.php';
+}
+
