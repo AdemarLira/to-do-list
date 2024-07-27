@@ -106,6 +106,8 @@
    margin: auto;
    margin-top: 50px;
    flex-wrap: wrap;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   color: rgb(49, 49, 49);
 }
 
 .box {
@@ -147,4 +149,11 @@
       opacity: 1;
       /* Opacidade final */
    }
+}
+
+#organizacao {
+   width: 100%;
+   margin-left: 350px;
+   margin-top: 100px;
+   margin-left: 350px;
 }
