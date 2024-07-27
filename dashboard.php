@@ -57,7 +57,7 @@ include_once("conexao.php");
       </div>
   </nav>
 
-  <div data-aos="fade-up" data-aos-anchor-placement="center-center">
+  <div data-aos-anchor-placement="center-center">
     <h3> Task list</h3>
   </div>
   <div class="container custom-container">
