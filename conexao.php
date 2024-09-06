@@ -1,6 +1,6 @@
 <?php
 
-$servidor = 'localhos';
+$servidor = 'localhost';
 $usuario = 'root';
 $senha = '';
 $dbName = 'cadastro_usuarios';
