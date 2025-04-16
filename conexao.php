@@ -3,6 +3,6 @@
 $servidor = 'localhost';
 $usuario = 'root';
 $senha = '';
-$dbName = 'cadastro_usuarios';
+$dbName = 'to-do-list';
 
 $conn = mysqli_connect($servidor, $usuario, $senha, $dbName);
